@@ -1,4 +1,4 @@
-programas necesarios:
+npm programas necesarios:
 node.js
 python.py
 
@@ -16,7 +16,8 @@ Back:
 pip install fastapi
 pip install uvicorn
 pip install sqlalchemy
-pip install psycopg2
+pip install psycopg2  // Requiere C++ Build Tools page.
+solucion: pip install psycopg[binary] // (psycopg3)
 //resumen:
 pip install fastapi uvicorn sqlalchemy psycopg2
 
