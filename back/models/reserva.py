@@ -13,7 +13,7 @@ class ReservaSinId(BaseModel):
     idCancha: int = Field(..., description="ID de la cancha asociada", example=1)
     cancha: Cancha = Field(..., description="Información de la cancha reservada")
     nombreContacto: str = Field(..., description="Nombre de la persona que realiza la reserva", example="Juan Pérez", max_length=255)
-    telefonoContacto: str = Field(..., description="Número de teléfono del contacto", example="+123456789",max_length=50)
+    telefonoContacto: str = Field(..., description="Número de teléfono del contacto", example="3434776345",min_length=9,max_length=13)
 
     # Validador para campos específicos
     

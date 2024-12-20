@@ -23,6 +23,11 @@ export default function Condiciones() {
                         -Número de telefono debe ser solo numérico. Sin "+" ni "-"
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        -El teléfono debe tener entre 9 y 13 caracteres
+                    </td>
+                </tr>
             </table>
         </div>
 

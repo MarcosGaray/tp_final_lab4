@@ -112,7 +112,10 @@ export default function FormReserva() {
         if (reserva.telefonoContacto != null) {
             const telefonoNumero = Number(reserva.telefonoContacto);
             if (!Number.isInteger(telefonoNumero)) {
-                erroresValidaciones.push("El teléfono debe ser un valor numérico")
+                erroresValidaciones.push("El teléfono debe ser un valor numérico");
+                reservaValida = false;
+            } else if (reserva.telefonoContacto.length < 9 || reserva.telefonoContacto.length > 13) {
+                erroresValidaciones.push("El teléfono debe tener entre 9 y 13 caracteres");
                 reservaValida = false;
             }
         }

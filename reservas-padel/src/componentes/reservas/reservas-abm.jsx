@@ -220,7 +220,7 @@ export default function AbmReservas() {
                                     <td>{r.dia.split('T')[0]}</td>
                                     <td>{formatearHora(r.horario)}</td>
                                     <td>{formatearDuracion(r.duracion)}</td>
-                                    <td>{formatearHora(r.horarioFinal)}</td>
+                                    <td>{r.horarioFinal ? formatearHora(r.horarioFinal) : "-"}</td>
                                     <td>{r.cancha.nombre}</td>
                                     <td>{r.nombreContacto}</td>
                                     <td>{r.telefonoContacto}</td>
